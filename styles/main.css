@@ -307,12 +307,3 @@ nav{grid-area: n;}
 
 
   }
-
-  @media screen and (max-width: 320px){
-    .carbon img{
-      display: inline;
-      width: 30%;
-      margin: 20px 5%;;
-    }
-
-  }
