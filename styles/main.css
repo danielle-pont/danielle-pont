@@ -210,7 +210,8 @@ nav{grid-area: n;}
     /* ****************************************TABLET SCREENS */
 
 
-        @media screen and (max-width: 768px){
+        /* @media screen and (max-width: 768px){ */
+          @media screen and (max-width: 768px){
     #content{
       display: grid;
       grid-template-columns: repeat(4, 2fr);
