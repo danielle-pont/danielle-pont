@@ -1,3 +1,5 @@
+@media screen and (max-width: 320px){
+
 #content{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -13,7 +15,7 @@
   "s s s s"
   "a a a a"
   "f f f f";
-}
+}}
 
 
 header{grid-area: h;}
@@ -303,5 +305,14 @@ nav{grid-area: n;}
       margin: 20px 5%;;
     }
 
+
+  }
+
+  @media screen and (max-width: 320px){
+    .carbon img{
+      display: inline;
+      width: 30%;
+      margin: 20px 5%;;
+    }
 
   }
