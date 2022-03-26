@@ -207,10 +207,111 @@ nav{grid-area: n;}
 
 
 
-    /* ****************************************DESKTOP SCREENS */
+    /* ****************************************TABLET SCREENS */
 
 
-        @media screen and (min-width: 550px){
+        @media screen and (max-width: 768px){
+    #content{
+      display: grid;
+      grid-template-columns: repeat(4, 2fr);
+      grid-auto-rows: minmax(100px, auto);
+      max-width: 960px;
+      margin: 0 auto;
+      grid-gap: none;
+      grid-template-areas: 
+      "h h h h"
+      "n n n n"
+      "m m m m"
+      "m m m m"
+      "a a a a"
+      "f f f f";
+    }
+
+    nav{
+      padding: 20px;
+      position: sticky;
+      top: 49px;
+    }
+    nav ul{
+      white-space: nowrap;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    nav li{
+      background-color: transparent;
+      width: 25%;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      display: inline-block;
+      font-size: 20px;
+      font-family: century gothic;
+      margin: 12px 0;
+      text-align: right;
+    }
+    
+    nav li a{
+      color: black;
+      text-decoration: none;
+    }
+    nav li a:hover{
+      font-style: italic;
+      text-decoration: underline;
+      color: rgb(70, 111, 199);
+      font-weight: lighter;
+    }
+
+    .links{
+      margin: 0 0;
+      white-space: nowrap;
+    }
+    
+    .links li{
+      display: block;
+      width: 50%;
+      margin: 20px 5%;
+      padding-top: 3em;
+    }
+  
+    .links li img{
+      max-width: 100%;
+    }
+
+    .links li:hover{
+      position: relative;
+      top: -4px;
+    }
+
+    .post p{
+      color: black;
+      text-align: left;
+      font-family: 'Times New Roman';
+      letter-spacing: 1px;
+      line-height: 25px;
+    }
+
+    .post-title{
+      color: rgb(70, 111, 199);
+      text-align: left;
+      font-family: 'Times New Roman';
+      letter-spacing: 1px;
+      line-height: 25px;
+      font-weight: lighter;
+    }
+
+    .carbon img{
+      display: inline;
+      width: 80%;
+      margin: 20px 5%;;
+    }
+
+
+  }
+
+   /* ****************************************DESKTOP SCREENS */
+
+
+   @media screen and (min-width: 1200px){
     #content{
       display: grid;
       grid-template-columns: repeat(4, 1fr);
